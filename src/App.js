@@ -85,7 +85,7 @@ const LandingPage = () => {
           alignItems: 'center' 
         }}
         >
-        Services <span style={{ marginLeft: '5px' }}>▼</span>
+        Services 
         </button>
 
         {showPopup && (
