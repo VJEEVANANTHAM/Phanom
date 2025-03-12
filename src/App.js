@@ -197,7 +197,6 @@ const LandingPage = () => {
 </nav>
 
     <div style={{ 
-      background: 'linear-gradient(to right, rgb(250, 248, 251), rgb(77, 135, 206))', 
       minHeight: '80vh', 
       fontFamily: 'Poppins, sans-serif', 
       fontWeight: 'bold',
