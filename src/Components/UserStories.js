@@ -27,7 +27,7 @@ const UserStories = () => {
   return (
     <div style={{ 
       padding: '40px 20px', 
-      background: '#F9FAFB', 
+      background: 'linear-gradient(to right, rgb(250, 248, 251), rgb(77, 135, 206))', 
       fontFamily: 'Poppins, sans-serif', 
       color: '#333', 
     }}>
