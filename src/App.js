@@ -67,7 +67,7 @@ const LandingPage = () => {
     style={{ 
       display: 'flex', 
       alignItems: 'center', 
-      gap: '30px' // More spacing between items
+      gap: '30px
     }}
   >
     
