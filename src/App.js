@@ -11,6 +11,8 @@ import UserStories from './Components/UserStories';
 import WhyChooseUsScreen from './Components/WhyChooseUsScreen';
 import MissionSection from './Components/MissionSection';
 import SubscribeSection from './Components/SubscribeSection';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 const LandingPage = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -38,6 +40,7 @@ const LandingPage = () => {
   return (
     <div 
     >
+    
     
     <nav 
   style={{ 
@@ -74,19 +77,21 @@ const LandingPage = () => {
         onMouseLeave={() => setShowPopup(false)}
       >
         <button 
-        style={{ 
-          color: '#000000', 
-          background: 'transparent', 
-          border: 'none', 
-          cursor: 'pointer', 
-          fontSize: '1.2rem', 
-          fontWeight: '400', 
-          display: 'flex', 
-          alignItems: 'center' 
-        }}
+            style={{
+                color: '#000000', 
+                background: 'transparent', 
+                border: 'none', 
+                cursor: 'pointer', 
+                fontSize: '1.2rem', 
+                fontWeight: '400', 
+                display: 'flex', 
+                alignItems: 'center'
+            }}
         >
-        Services 
+            Services 
+            <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '5px',fontSize:'90%'}} />
         </button>
+
 
         {showPopup && (
         <div
@@ -132,6 +137,8 @@ const LandingPage = () => {
       }}
     >
       Hire Indian Talent
+      <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '5px',fontSize:'90%'}} />
+
     </button>
 
     <button 
@@ -201,16 +208,31 @@ const LandingPage = () => {
       fontFamily: 'Poppins, sans-serif', 
       fontWeight: 'bold',
     }}>
-      <header id="header" style={{ textAlign: 'center', padding: '120px 20px 60px' }}>
+      <header id="header" style={{ textAlign: 'center', padding: '120px 20px 60px',background: 'linear-gradient(132.77deg, #FFFFFF 55.44%, #4D95E1 71.32%, #8165E4 82.01%, #BD2CE8 94.69%)'
+ }}>
+
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ flex: 1, paddingRight: '20px' }}>
             <motion.h1 
-              style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#333' }}
+              style={{ fontSize: '48px', fontWeight: '700', color: '#333',fontFamily:'Poppins', lineHeight:'58px',letterSpacing:'0%',
+                verticalAlign:'middle'
+              }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              Let’s <span style={{ color: '#9b51e0' }}>innovation</span> meet your excellence
+
+
+                  <span
+      style={{
+        background: 'linear-gradient(90deg, rgb(16, 136, 241) 0%, #CC1CE8 50%, #A344E6 100%)',
+        WebkitBackgroundClip: 'text', // For Safari
+        backgroundClip: 'text',
+        color: 'transparent',
+      }}
+    >Let’s innovation</span> meet your excellence
+               
+
             </motion.h1>
             <motion.p 
               style={{ marginTop: '20px', fontSize: '1.2rem', color: '#555' }}
@@ -221,7 +243,7 @@ const LandingPage = () => {
               Excellence refined, innovation ignited, the future starts here
             </motion.p>
             <motion.button
-              style={{ marginTop: '30px', padding: '10px 20px', background: '#9b51e0', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '1rem' }}
+              style={{ marginTop: '30px',height:'69px',width:'309px', padding: '10px 20px', background: '#9b51e0', color: '#fff', border: 'none', borderRadius: '34.5px', cursor: 'pointer', fontSize: '1rem', }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -254,6 +276,7 @@ const LandingPage = () => {
       <Card />
       <SplitScreen />
       <SplitScreenWithDividers />
+      <Card/>
       <WhyChooseUsScreen />
       <SubscribeSection />
       <MissionSection />
